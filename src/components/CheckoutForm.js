@@ -20,7 +20,7 @@ const CheckoutForm = (props) => {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form className={props.darkMode === true ? '' : 'lightMode'} onSubmit={handleSubmit}>
         <h2>Checkout Form</h2>
         <label>
           First Name:
